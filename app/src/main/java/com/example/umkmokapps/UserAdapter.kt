@@ -37,7 +37,7 @@ class UserAdapter(private val users: MutableList<DataItem>) :
         val user = users[position]
         Glide.with(holder.itemView.context)
             .load(user.avatar)
-            .apply(RequestOptions().override(80, 80).placeholder(R.drawable.icon_avatar))
+//            .apply(RequestOptions().override(80, 80).placeholder(R.drawable.icon_avatar))
             .transform(CircleCrop())
             .into(holder.ivAvatar)
 
